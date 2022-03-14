@@ -1,0 +1,17 @@
+
+<!-- diretiva de style -->
+<p [ngStyle]="{ 'font-size': '50px' }">directives works!</p>
+<p [ngStyle]="{ 'font-size': size + 'px', 'font-family': font, color: color }">directives works!</p>
+
+
+<!-- diretiva de class -->
+<p [ngClass]="class">directives de classes!</p>
+
+
+<ul>
+    <li *ngFor="let n of numberFor"> {{ n }}</li>
+</ul>
+
+<h2 *ngIf = "messageIf"> voce foi demitido! </h2>
+
+<h2 *ngIf = "name === 'Matheus'"> {{ name }} voce foi demitido! </h2>
